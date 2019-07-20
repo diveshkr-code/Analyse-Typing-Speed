@@ -10,3 +10,8 @@ points(typing$DATE[ typing$MONTH == 4 ], typing$CPM[  typing$MONTH == 4 ], col="
 points(typing$DATE[ typing$MONTH == 5 ], typing$CPM[  typing$MONTH == 5 ], col="Green", pch = 19)
 points(typing$DATE[ typing$MONTH == 6 ], typing$CPM[  typing$MONTH == 6 ], col="Red", pch = 19)
 points(typing$DATE[ typing$MONTH == 7 ], typing$CPM[  typing$MONTH == 7 ], col="Black", pch = 19)
+
+typing
+regTyping = lm(CPM ~ DATE, data = typing)
+summary(regtTyping)
+(180 - 55.748) / 0.70252
